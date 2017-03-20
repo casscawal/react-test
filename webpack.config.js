@@ -11,7 +11,6 @@ var config = {
 	context: __dirname + "/app",
 	entry: {
 		app: APP_DIR + "/index.jsx",
-		styles: STYLE_DIR + '/index.less',
 	},
 	output: {
 		path: BUILD_DIR,
@@ -22,21 +21,14 @@ var config = {
 		{
 	      // "test" is commonly used to match the file extension
 	      test: /\.jsx$/,
-
 	      // "include" is commonly used to match the directories
 	      include: APP_DIR,
-
 	      // "exclude" should be used to exclude exceptions
 	      // try to prefer "include" when possible
 
 	      // the "loader"
-	      loader: "babel" // or "babel" because webpack adds the '-loader' automatically
+	      loader: "babel-loader" // or "babel" because webpack adds the '-loader' automatically
 	  },
-	  {
-	  	test: /\.less$/,
-	  	include: STYLE_DIR,
-	  	loader:'less-loader',
-	  }
 	  ]
 	},
 }

@@ -10,7 +10,7 @@ var STYLE_DIR = path.resolve(__dirname, './less');
 var config = {
 	context: __dirname + "/app",
 	entry: {
-		app: APP_DIR + "/index.jsx",
+		app: APP_DIR + "/index.js",
 	},
 	output: {
 		path: BUILD_DIR,

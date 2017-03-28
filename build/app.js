@@ -70,7 +70,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-index.jsx;
+
 
 /***/ })
 /******/ ]);

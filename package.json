@@ -2,9 +2,13 @@
   "name": "react2.0",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "main.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casscawal/react-test"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +27,6 @@
     "babel-loader": "^6.4.1",
     "babel-preset-env": "^1.2.2",
     "babel-preset-es2015": "^6.24.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.3.2"
   }
 }

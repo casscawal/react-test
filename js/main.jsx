@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TodoList from './../Components/TodoList'
+import TodoList from './../Components/TodoList.jsx'
 
 const app = document.getElementById("app");
 

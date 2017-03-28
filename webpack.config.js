@@ -10,27 +10,21 @@ var STYLE_DIR = path.resolve(__dirname, './less');
 var config = {
 	context: __dirname + "/app",
 	entry: {
-		app: APP_DIR + "/main.js",
+		app: APP_DIR + "/main.jsx",
 	},
 	output: {
 		path: BUILD_DIR,
 		filename: "[name].js"
 	},
-	module: {
-		loaders: [
-		{
-	      // "test" is commonly used to match the file extension
-	      test: /\.js$/,
-	      // "include" is commonly used to match the directories
-	      include: APP_DIR,
-	      // "exclude" should be used to exclude exceptions
-	      // try to prefer "include" when possible
-
-	      // the "loader"
-	      loader: "babel-loader" // or "babel" because webpack adds the '-loader' automatically
-	  },
-	  ]
-	},
+	 module: {
+	    loaders: [
+	      {
+	        test: /\.jsx?$/,
+	        loader: 'babel-loader',
+	        exclude: /node_modules/,
+	      }
+	    ]
+	  }
 }
 
 
